@@ -1,16 +1,93 @@
-# React + Vite
+# Luma-style
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce web application built using React, Vite, Redux, and Tailwind CSS. The platform allows users to browse products, filter categories, search items, manage cart and wishlist, and view detailed product information.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+### Dashboard
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fixed Header with logo, cart, wishlist, search, and login
+- Banner with scroll/parallax effects
+- Product categories and dynamic product listing
+- Footer with company info, quick links, and newsletter
 
-## Expanding the ESLint configuration
+### Product Browsing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Category-based filtering (Electronics, Fashion, etc.)
+- Search functionality for products
+- Dynamic product data using Fake Store API
+
+### Cart Functionality
+
+- Add to cart and remove from cart
+- Dynamic total price calculation
+- Cart item count displayed in header
+- Persistent data using Local Storage
+
+### Wishlist
+
+- Add and remove items from wishlist
+
+- Separate wishlist page
+
+### Product Details Page
+
+- Product image, name, price, and reviews
+
+- Detailed description and key features
+
+### Authentication
+
+- Login page with email and password validation
+
+### UI/UX
+
+- Fully responsive design
+- Smooth animations and hover effects
+- User-friendly navigation
+
+---
+
+## Tech Stack
+
+- Frontend: React.js
+- State Management: Redux, React-Redux, Redux-Thunk
+- Routing: React Router DOM
+- Styling: Tailwind CSS
+- Icons: React Icons
+- API: Fake Store API
+
+---
+
+---
+
+## Development Guidelines
+
+- Built as a Single Page Application (SPA)
+- Modular and scalable folder structure
+- API-based dynamic data rendering
+- Input validation for all forms
+- LocalStorage used for cart and wishlist persistence
+- Responsive and accessible UI
+
+---
+
+## Deployment
+
+The application is deployed using Netlify and integrated with GitHub for continuous deployment.
+
+---
+
+---
+
+## Author
+
+Kajal Kumari
+
+---
+
+## Acknowledgements
+
+- Fake Store API for product data
