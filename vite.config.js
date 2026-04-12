@@ -4,15 +4,15 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/Luma-style/',
+  base: '/',   // ✅ FIXED
 
- server: {
-  proxy: {
-    '/api': {
-      target: 'https://fakestoreapi.com',
-      changeOrigin: true,
-      rewrite: (path) => path.replace(/^\/api/, ''),
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://fakestoreapi.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
   },
-},
 })
